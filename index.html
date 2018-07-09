@@ -1,0 +1,30 @@
+<html ng-app="todolist">
+    <head>
+        <link rel="stylesheet"href="style/bootstrap.min.css">
+        <script src="js/angular.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body>
+        <div ng-controller="ctrl">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1>to do list</h1>
+                </div>
+             <div class="row">
+                 <div class="col-sm-8">
+                     <input type="text" class="form-control" ng-model="todo">
+                 </div>
+                 <div class="col-sm-4">
+                    <button class="btn btn-primary btn-block" ng-click="run()">click</button>
+                 </div>
+            </div>
+            <ul class="list-group">
+                <li ng-repeat="xyz in arr track by $index" class="list-group-item">{{xyz}}</li>
+            </ul>
+        </div>
+        </div>
+
+                 </body>
+               </html>
